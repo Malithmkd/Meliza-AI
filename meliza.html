@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meliza AI</title>
+  <link rel="icon" href="Assests/Logo.png" type="image/png">
+  <script src="src.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <link href='https://fonts.googleapis.com/css?family=JetBrains Mono' rel='stylesheet'>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <div class="logo">🌐</div>
+    <nav>
+      <a href="#Home">Home</a>
+      <a href="#About">About Us</a>
+      <a href="#features">Features</a>
+      <a href="#packages">Packages</a>
+
+    </nav>
+    <button class="signup">Sign Up</button>
+  </header>
+
+  <section class="hero" id="Home">
+    <h1 class="topic">M E L I Z A &nbsp A I</h1>
+    <p class="subtopic">Your AI Powered Virtual Assistant here for your help!</p>
+    <div class="cta-buttons">
+      <button class="btn-primary">Try Meliza ↗</button>
+      <button class="btn-secondary">Get Meliza Desktop ></button>
+    </div>
+    <img src="Assests/PerspectiveGrid.png" class="HeroImage" />
+  </section>
+
+  <div class="About" id="About">
+    <h1>About Meliza</h1>
+    <div class="content">
+      <div class="image">
+        <img src="Assests/Aboutimage.png" alt="Meliza AI Robot">
+      </div>
+      <div class="text">
+        <h2>💡 What is Meliza AI?</h2>
+        <p>Meliza AI is a cutting-edge technology company focused on providing AI-driven solutions for businesses
+          worldwide. Our mission is to make technology accessible and beneficial for everyone.</p>
+
+        <h2>✨ Why Choose Meliza AI?</h2>
+        <ul>
+          <li><strong>Fast Responses:</strong> Get answers in seconds.</li>
+          <li><strong>User-Friendly Design:</strong> Clean, intuitive interface for seamless communication.</li>
+          <li><strong>AI-Powered Accuracy:</strong> Advanced algorithms to understand and respond effectively.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="Aboutdes">
+      <p>100,000+ users, 11,000+ companies around the world use Meliza AI</p>
+    </div>
+  </div>
+  <br />
+  <hr class="hr" />
+  <br />
+
+  <section id="features" class="features-section">
+    <h1>Features</h1>
+    <div class="feature-cards">
+      <div class="card">
+        <h3>Code Generate</h3>
+        <img src="Assests/1.jpg" class="Fimage" />
+        <p>"Write smarter, faster! Meliza AI generates high-quality code snippets for your projects, saving you time and
+          effort."</p>
+      </div>
+      <div class="card">
+        <h3>Image Generate</h3>
+        <img src="Assests/2.png" class="Fimage" />
+        <p>"Transform your imagination into visuals! Meliza AI creates stunning images tailored to your needs in
+          seconds."</p>
+      </div>
+      <div class="card">
+        <h3>Voice Assistance</h3>
+        <img src="Assests/3.png" class="Fimage" />
+        <p>"Experience hands-free convenience! Meliza’s
+          voice assistant helps you accomplish tasks through seamless voice commands."</p>
+      </div>
+    </div>
+  </section>
+
+  <br />
+  <hr class="hr" />
+  <br />
+
+  <section id="packages" class="packages-section">
+    <h1>Packages</h1>
+    <div class="toggle">
+      <button class="toggle-btn" onclick="togglePricing('monthly')" id="monthly">Monthly</button>
+      <button class="toggle-btn active" onclick="togglePricing('annually')" id="annually">Annually</button>
+    </div>
+
+    <div class="pricing-cards">
+      <div class="Packagecard">
+        <div class="packdetails">
+          <img src="/Assests/starter.png" />
+          <div class="pack">
+            <h3>Starter<span>(free)</span></h3>
+            <p class="price" data-monthly="$0" data-annually="$0">$0/month</p>
+          </div>
+        </div>
+        <hr><br />
+        <ul class="pricelist">
+          <li>&#10004 Basic code generation</li>
+          <li>&#10004 Basic AI version of Meliza</li>
+          <li>&#10004 Limited image generation (up to 5 images/day)</li>
+          <li>&#10004 Text-to-speech voice assistance for basic tasks</li>
+          <li>&#10004 File upload (up to 3/day)</li>
+        </ul>
+        <button class="btns">Get Meliza Free</button>
+      </div>
+      <div class="Packagecard">
+        <div class="packdetails">
+          <img src="/Assests/Pro.png" />
+          <div class="pack">
+            <h3>Pro</h3>
+            <p class="price" data-monthly="$15.75" data-annually="$150">$15.75/month</p>
+          </div>
+        </div>
+        <hr><br />
+        <ul class="pricelist">
+          <li>&#10004 Advanced code generation</li>
+          <li>&#10004 Meliza 3.5 AI version</li>
+          <li>&#10004 Image generation (up to 10 images/day)</li>
+          <li>&#10004 Real-time voice assistance</li>
+          <li>&#10004 File upload (up to 10/day)</li>
+          <li>&#10004 Access 24/7 priority customer support</li>
+          <li>&#10004 Debugging assistance</li>
+        </ul>
+        <button class="btns">Get Meliza Pro</button>
+      </div>
+      <div class="Packagecard">
+        <div class="packdetails">
+          <img src="/Assests/Enterprise.png" />
+          <div class="pack">
+            <h3>Enterprise</h3>
+            <p class="price" data-monthly="$30" data-annually="$300">$30/month</p>
+          </div>
+        </div>
+        <br />
+        <hr>
+        <br />
+        <ul class="pricelist">
+          <li>&#10004 Advanced code generation</li>
+          <li>&#10004 Meliza Pro AI version</li>
+          <li>&#10004 Unlimited image generation</li>
+          <li>&#10004 Real-time voice assistance</li>
+          <li>&#10004 Unlimited file upload</li>
+          <li>&#10004 Access 24/7 priority customer support</li>
+          <li>&#10004 Debugging assistance</li>
+          <li>&#10004 Code with preferred IDE online</li>
+          <li>&#10004 Cloud storage integration</li>
+        </ul>
+        <button class="btns">Get Meliza Enterprise</button>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="left">
+        <p>A MORE MEANINGFUL HOME FOR AI HELP</p>
+        <a href="#" class="cta-button">
+          LET'S USE MELIZA <span>↗</span>
+        </a>
+      </div>
+      <div class="right">
+        <div class="footer-links">
+          <ul>
+            <li>
+              <h4>HOME</h4>
+            </li>
+            <li><a href="#">Try Meliza</a></li>
+            <li><a href="#">Get Meliza Desktop</a></li>
+          </ul>
+          <ul>
+            <li>
+              <h4>ABOUT ME</h4>
+            </li>
+            <li><a href="#">What is Meliza</a></li>
+            <li><a href="#">Why Meliza</a></li>
+          </ul>
+          <ul>
+            <li>
+              <h4>FEATURES</h4>
+            </li>
+            <li><a href="#">Code Generate</a></li>
+            <li><a href="#">Image Generate</a></li>
+            <li><a href="#">Voice Assistance</a></li>
+          </ul>
+          <ul>
+            <li>
+              <h4>PACKAGES</h4>
+            </li>
+            <li><a href="#">Starter</a></li>
+            <li><a href="#">Pro</a></li>
+            <li><a href="#">Enterprise</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Terms & Conditions | Privacy Policy</p>
+      <div class="social-icons">
+        <a href="#" class="Iconss"><i class='bx bxl-facebook-circle'  alt="Facebook"></i></a>
+        <a href="#" class="Iconss"><i class='bx bxl-twitter'  alt="Twitter"></i></a>
+        <a href="#" class="Iconss"><i class='bx bxl-linkedin'  alt="Linkedin"></i></a>
+      </div>
+      <p>© 2024 MELIZA AI. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
