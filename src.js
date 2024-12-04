@@ -16,4 +16,22 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('dropdown');
+  }
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    const menuToggle = document.querySelector('.menu-toggle');
   
+    // Toggle the dropdown class on the nav
+    nav.classList.toggle('dropdown');
+  
+    // Change the button text based on the menu state
+    if (nav.classList.contains('dropdown')) {
+      menuToggle.textContent = '✖';
+    } else {
+      menuToggle.textContent = '☰';
+    }
+  }
+      
