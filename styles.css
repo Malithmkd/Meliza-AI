@@ -499,7 +499,6 @@ ul li strong {
 
 /*Navigation bar*/
 @media (max-width: 768px) {
-
   nav,
   button.signup {
     display: none;
