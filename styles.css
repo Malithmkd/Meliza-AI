@@ -111,7 +111,10 @@ nav a:hover {
   background: #fff;
   color: #000;
 }
-
+.btn-primary a{
+  text-decoration: none;
+  color: #000;
+}
 .btn-primary:hover {
   background: #ddd;
 }

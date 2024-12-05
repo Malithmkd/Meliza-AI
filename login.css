@@ -1,0 +1,132 @@
+ /* Add your CSS styles here */
+ body {
+     font-family: Arial, sans-serif;
+     background: radial-gradient(circle, #0f0f2d, #000);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+ }
+
+ .login-container {
+     padding: 40px;
+     border-radius: 8px;
+     width: 90%;
+     max-width: 400px;
+ }
+
+ .login-container h1 {
+    text-align: center;
+    background: -webkit-linear-gradient(right, #0303fc, #9696f0, #ffffff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    margin-bottom: 30px;
+ }
+
+ .login-container input {
+     width: 100%;
+     padding: 12px;
+     margin-bottom: 20px;
+     border: none;
+     border-radius: 0%;
+     border-bottom: 2px solid rgba(255, 252, 252, 0.699);
+     background-color: #2a2a4d00;
+     color: #fff;
+ }
+
+ .login-container form input:focus~label,
+ .login-container form input:valid~label {
+     transform: translateY(-20px);
+     font-size: 14px;
+     color: #3498db;
+ }
+
+ .login-container form label {
+     position: absolute;
+     pointer-events: none;
+     bottom: 10px;
+     font-size: 16px;
+     transition: all 0.3s ease;
+ }
+
+ .login-container button {
+     width: 100%;
+     padding: 12px;
+     background-color: #5a5aff;
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+     align-items: center;
+     margin-left: 15px;
+ }
+
+ .login-container button:hover {
+     background-color: #4747e0;
+ }
+
+ .login-container p {
+     text-align: center;
+     color: #fff;
+     margin-top: 20px;
+ }
+
+ .login-container p a {
+     color: #5a5aff;
+     text-decoration: none;
+ }
+
+ .login-container p a:hover {
+     text-decoration: underline;
+ }
+
+ .logo {
+     width: 350px;
+     height: 350px;
+ }
+
+ @media (max-width: 767px) {
+     .login-container {
+         padding: 0px;
+         align-items: center;
+         padding-top: 0px;
+         margin-top: 0px;
+         padding-bottom: 70px;
+     }
+
+     body {
+         display: grid;
+         grid-template-columns: max-content;
+     }
+
+     .logo {
+         display: none;
+     }
+
+     .login-container h1 {
+        text-align: left;
+        background: -webkit-linear-gradient(right, #2020e5e5, #2020e5e5, #ffffff);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0px;
+        font-size: 50px;
+
+     }
+
+     .login-container input {
+         width: 85%;
+         padding: 22px;
+         align-items: center;
+         justify-content: center;
+         margin-bottom: 30px;
+         margin-left: 15px;
+         border-radius: 0%;
+     }
+     .login-container button{
+        width: 97%;
+        margin-left: 15px;
+     }
+ }
