@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meliza AI Packages</title>
+    <!-- Google Fonts Link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="account.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h1 class="title">MELIZA AI</h1>
+        <div class="menu">
+          <div class="menu-item active"><a href="Profile.html">Profile</a></div>
+          <div class="menu-item "><a href="Package.html">Package</a></div>
+          <div class="menu-item"><a href="account.html"> Account</a></div>
+          <div class="logout"><a href="index.html">Logout</a></div>
+        </div>
+      </div>
+      <div class="settings-form">
+        <form>
+          <div class="form-group">
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" value="Christine Shevshenko" />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" value="ChristineAI@gmail.com" />
+          </div>
+
+          <div class="form-group1">
+            <div class="password-theme">
+              <div class="password">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="*******789" />
+              </div>
+              <div>
+                <label>Theme</label>
+                <div class="theme-options">
+                  <label
+                    ><input type="radio" name="theme" value="system" checked />
+                    System</label
+                  >
+                  <label
+                    ><input type="radio" name="theme" value="light" />
+                    Light</label
+                  >
+                  <label
+                    ><input type="radio" name="theme" value="dark" />
+                    Dark</label
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" id="save-settings">Save Settings</button>
+        </form>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

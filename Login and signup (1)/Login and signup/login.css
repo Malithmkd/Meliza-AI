@@ -68,9 +68,7 @@ body {
   font-size: 1rem;
   outline: none;
 }
-form a{
-  text-decoration: none;
-}
+
 .form-section input::placeholder {
   color: #666;
 }
